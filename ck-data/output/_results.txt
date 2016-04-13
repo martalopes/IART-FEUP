@@ -1,0 +1,63 @@
+
+C5.0 [Release 2.07 GPL Edition]  	Wed Apr 13 22:49:43 2016
+-------------------------------
+
+    Options:
+	Application `../ck-data/input/ck'
+
+Class specified by attribute `class'
+
+Read 280 cases (25 attributes) from ../ck-data/input/ck.data
+
+Decision tree:
+
+sc > 1.2: ckd (134.8/2.4)
+sc <= 1.2:
+:...dm = yes: ckd (15.8/0.2)
+    dm = no:
+    :...hemo <= 12.7: ckd (13.3/0.5)
+        hemo > 12.7:
+        :...sg = 1.005: notckd (0)
+            sg in {1.010,1.015}: ckd (9.2/0.4)
+            sg in {1.020,1.025}: notckd (106.9/0.5)
+
+
+Evaluation on training data (280 cases):
+
+	    Decision Tree   
+	  ----------------  
+	  Size      Errors  
+
+	     5    0( 0.0%)   <<
+
+
+	   (a)   (b)    <-classified as
+	  ----  ----
+	   170          (a): class ckd
+	         110    (b): class notckd
+
+
+	Attribute usage:
+
+	     96%  sc
+	     53%  dm
+	     43%  hemo
+	     41%  sg
+
+
+Evaluation on test data (120 cases):
+
+	    Decision Tree   
+	  ----------------  
+	  Size      Errors  
+
+	     5    2( 1.7%)   <<
+
+
+	   (a)   (b)    <-classified as
+	  ----  ----
+	    78     2    (a): class ckd
+	          40    (b): class notckd
+
+
+Time: 0.0 secs

@@ -1,0 +1,290 @@
+
+C5.0 [Release 2.07 GPL Edition]  	Wed Apr 13 22:49:36 2016
+-------------------------------
+
+    Options:
+	Application `../ck-data/input/ck'
+	Cross-validate using 10 folds
+
+Class specified by attribute `class'
+
+Read 280 cases (25 attributes) from ../ck-data/input/ck.data
+Read 120 cases from ../ck-data/input/ck.test
+
+
+[ Fold 1 ]
+
+Decision tree:
+
+sc > 1.2: ckd (180/1.5)
+sc <= 1.2:
+:...dm = yes: ckd (13.6/0.1)
+    dm = no:
+    :...pe = yes: ckd (10.6/0.1)
+        pe = no:
+        :...hemo <= 12.9: ckd (16.1/0.6)
+            hemo > 12.9:
+            :...sg = 1.005: notckd (0)
+                sg in {1.010,1.015}: ckd (7.2/0.2)
+                sg in {1.020,1.025}: notckd (132.5)
+
+Evaluation on hold-out data (40 cases):
+
+	    Decision Tree   
+	  ----------------  
+	  Size      Errors  
+
+	     6    0( 0.0%)   <<
+
+
+[ Fold 2 ]
+
+Decision tree:
+
+sc > 1.2: ckd (182.1/2)
+sc <= 1.2:
+:...pe = yes: ckd (13.6/0.1)
+    pe = no:
+    :...dm = yes: ckd (10.6/0.1)
+        dm = no:
+        :...hemo <= 12.9: ckd (13.9/0.5)
+            hemo > 12.9:
+            :...sg = 1.005: notckd (0)
+                sg in {1.010,1.015}: ckd (7.3/0.2)
+                sg in {1.020,1.025}: notckd (132.6/0.4)
+
+Evaluation on hold-out data (40 cases):
+
+	    Decision Tree   
+	  ----------------  
+	  Size      Errors  
+
+	     6    1( 2.5%)   <<
+
+
+[ Fold 3 ]
+
+Decision tree:
+
+sc > 1.2: ckd (184.2/2.6)
+sc <= 1.2:
+:...hemo <= 12.9: ckd (26.2/0.7)
+    hemo > 12.9:
+    :...dm = yes: ckd (8/0.1)
+        dm = no:
+        :...pe = yes: ckd (4.3)
+            pe = no:
+            :...sg = 1.005: notckd (0)
+                sg in {1.010,1.015}: ckd (5.6/0.2)
+                sg in {1.020,1.025}: notckd (131.8/0.4)
+
+Evaluation on hold-out data (40 cases):
+
+	    Decision Tree   
+	  ----------------  
+	  Size      Errors  
+
+	     6    0( 0.0%)   <<
+
+
+[ Fold 4 ]
+
+Decision tree:
+
+sc > 1.2: ckd (181.6/2.5)
+sc <= 1.2:
+:...dm = yes: ckd (17.7/0.2)
+    dm = no:
+    :...hemo <= 12.9: ckd (17.7/0.7)
+        hemo > 12.9:
+        :...pe = yes: ckd (4)
+            pe = no:
+            :...sg = 1.005: notckd (0)
+                sg in {1.010,1.015}: ckd (7.3/0.3)
+                sg in {1.020,1.025}: notckd (131.8/0.4)
+
+Evaluation on hold-out data (40 cases):
+
+	    Decision Tree   
+	  ----------------  
+	  Size      Errors  
+
+	     6    0( 0.0%)   <<
+
+
+[ Fold 5 ]
+
+Decision tree:
+
+sc > 1.2: ckd (179/2)
+sc <= 1.2:
+:...pe = yes: ckd (14.6/0.1)
+    pe = no:
+    :...dm = yes: ckd (10.6/0.1)
+        dm = no:
+        :...hemo <= 12.8: ckd (16.2/0.6)
+            hemo > 12.8:
+            :...sg = 1.005: notckd (0)
+                sg in {1.010,1.015}: ckd (7.2/0.2)
+                sg in {1.020,1.025}: notckd (132.4/0.5)
+
+Evaluation on hold-out data (40 cases):
+
+	    Decision Tree   
+	  ----------------  
+	  Size      Errors  
+
+	     6    0( 0.0%)   <<
+
+
+[ Fold 6 ]
+
+Decision tree:
+
+sc > 1.2: ckd (181.6/2)
+sc <= 1.2:
+:...dm = yes: ckd (16.7/0.2)
+    dm = no:
+    :...pe = yes: ckd (9/0.1)
+        pe = no:
+        :...hemo <= 12.9: ckd (13.8/0.5)
+            hemo > 12.9:
+            :...sg = 1.005: notckd (0)
+                sg in {1.010,1.015}: ckd (6.4/0.2)
+                sg in {1.020,1.025}: notckd (132.6/0.5)
+
+Evaluation on hold-out data (40 cases):
+
+	    Decision Tree   
+	  ----------------  
+	  Size      Errors  
+
+	     6    1( 2.5%)   <<
+
+
+[ Fold 7 ]
+
+Decision tree:
+
+sc > 1.2: ckd (181/2.5)
+sc <= 1.2:
+:...pe = yes: ckd (15.5)
+    pe = no:
+    :...dm = yes: ckd (12.6/0.2)
+        dm = no:
+        :...hemo <= 12.9: ckd (14.4/0.6)
+            hemo > 12.9:
+            :...sg = 1.005: notckd (0)
+                sg in {1.010,1.015}: ckd (4.3/0.2)
+                sg in {1.020,1.025}: notckd (132/0.4)
+
+Evaluation on hold-out data (40 cases):
+
+	    Decision Tree   
+	  ----------------  
+	  Size      Errors  
+
+	     6    0( 0.0%)   <<
+
+
+[ Fold 8 ]
+
+Decision tree:
+
+sc > 1.2: ckd (183.1/2.5)
+sc <= 1.2:
+:...dm = yes: ckd (16.2/0.2)
+    dm = no:
+    :...pe = yes: ckd (9.5/0.1)
+        pe = no:
+        :...hemo <= 12.7: ckd (12.7/0.3)
+            hemo > 12.7:
+            :...sg = 1.005: notckd (0)
+                sg in {1.010,1.015}: ckd (6.4/0.2)
+                sg in {1.020,1.025}: notckd (132.1/0.5)
+
+Evaluation on hold-out data (40 cases):
+
+	    Decision Tree   
+	  ----------------  
+	  Size      Errors  
+
+	     6    0( 0.0%)   <<
+
+
+[ Fold 9 ]
+
+Decision tree:
+
+sc > 1.2: ckd (181.6/2.5)
+sc <= 1.2:
+:...pe = yes: ckd (15.6/0.1)
+    pe = no:
+    :...hemo <= 12.9: ckd (16.3/0.5)
+        hemo > 12.9:
+        :...sg = 1.005: notckd (0)
+            sg in {1.010,1.015}: ckd (14.3/0.5)
+            sg in {1.020,1.025}: notckd (132.3/0.9)
+
+Evaluation on hold-out data (40 cases):
+
+	    Decision Tree   
+	  ----------------  
+	  Size      Errors  
+
+	     5    1( 2.5%)   <<
+
+
+[ Fold 10 ]
+
+Decision tree:
+
+sc > 1.2: ckd (180/2.5)
+sc <= 1.2:
+:...pe = yes: ckd (15.1/0.1)
+    pe = no:
+    :...dm = yes: ckd (11.6/0.1)
+        dm = no:
+        :...hemo <= 12.9: ckd (15/0.6)
+            hemo > 12.9:
+            :...sg = 1.005: notckd (0)
+                sg in {1.010,1.015}: ckd (6.4/0.2)
+                sg in {1.020,1.025}: notckd (131.9/0.5)
+
+Evaluation on hold-out data (40 cases):
+
+	    Decision Tree   
+	  ----------------  
+	  Size      Errors  
+
+	     6    0( 0.0%)   <<
+
+
+[ Summary ]
+
+Fold	    Decision Tree   
+----	  ----------------  
+	  Size      Errors  
+
+   1	     6        0.0%
+   2	     6        2.5%
+   3	     6        0.0%
+   4	     6        0.0%
+   5	     6        0.0%
+   6	     6        2.5%
+   7	     6        0.0%
+   8	     6        0.0%
+   9	     5        2.5%
+  10	     6        0.0%
+
+  Mean	   5.9        0.8%
+  SE	   0.1        0.4%
+
+
+	   (a)   (b)    <-classified as
+	  ----  ----
+	   249     1    (a): class ckd
+	     2   148    (b): class notckd
+
+
+Time: 0.0 secs
