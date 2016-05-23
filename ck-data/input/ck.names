@@ -6,7 +6,7 @@ sg:								1.005,1.010,1.015,1.020,1.025.
 al:								0,1,2,3,4,5.
 su:								0,1,2,3,4,5.
 rbc:							normal,abnormal.
-pc:								normal,abnormal
+pc:								normal,abnormal.
 pcc:							present,notpresent.
 ba:								present,notpresent.
 bgr:							continuous.

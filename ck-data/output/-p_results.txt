@@ -1,5 +1,5 @@
 
-C5.0 [Release 2.07 GPL Edition]  	Wed Apr 13 22:49:24 2016
+C5.0 [Release 2.07 GPL Edition]  	Sat May 21 16:42:15 2016
 -------------------------------
 
     Options:
@@ -8,57 +8,60 @@ C5.0 [Release 2.07 GPL Edition]  	Wed Apr 13 22:49:24 2016
 
 Class specified by attribute `class'
 
-Read 280 cases (25 attributes) from ../ck-data/input/ck.data
+Read 300 cases (25 attributes) from ../ck-data/input/ck.data
 
 Decision tree:
 
-sc >= 1.4 (1.25): ckd (134.8/2.4)
+sc >= 1.4 (1.25): ckd (159.9/1.6)
 sc <= 1.2 (1.25):
-:...dm = yes: ckd (15.8/0.2)
+:...dm = yes: ckd (15.4)
     dm = no:
-    :...hemo <= 12.3 (12.85): ckd (13.3/0.5)
+    :...hemo <= 12.7 (12.85): ckd (15.8/0.3)
         hemo >= 13 (12.85):
-        :...sg = 1.005: notckd (0)
-            sg in {1.010,1.015}: ckd (9.2/0.4)
-            sg in {1.020,1.025}: notckd (106.9/0.5)
+        :...pe = yes: ckd (4.4)
+            pe = no:
+            :...sg = 1.005: notckd (0)
+                sg in {1.010,1.015}: ckd (6.1/0.1)
+                sg in {1.020,1.025}: notckd (98.5/0.4)
 
 
-Evaluation on training data (280 cases):
+Evaluation on training data (300 cases):
 
 	    Decision Tree   
 	  ----------------  
 	  Size      Errors  
 
-	     5    0( 0.0%)   <<
+	     6    3( 1.0%)   <<
 
 
 	   (a)   (b)    <-classified as
 	  ----  ----
-	   170          (a): class ckd
-	         110    (b): class notckd
+	   200          (a): class ckd
+	     3    97    (b): class notckd
 
 
 	Attribute usage:
 
 	     96%  sc
-	     55%  dm
-	     44%  hemo
-	     43%  sg
+	     51%  dm
+	     39%  hemo
+	     38%  pe
+	     36%  sg
 
 
-Evaluation on test data (120 cases):
+Evaluation on test data (100 cases):
 
 	    Decision Tree   
 	  ----------------  
 	  Size      Errors  
 
-	     5    2( 1.7%)   <<
+	     6    2( 2.0%)   <<
 
 
 	   (a)   (b)    <-classified as
 	  ----  ----
-	    78     2    (a): class ckd
-	          40    (b): class notckd
+	    50          (a): class ckd
+	     2    48    (b): class notckd
 
 
 Time: 0.0 secs

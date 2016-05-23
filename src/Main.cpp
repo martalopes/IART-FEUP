@@ -7,7 +7,7 @@
 int main() {
 	// https://www.rulequest.com/see5-unix.html
 	std::string input = Folders::DATA_FOLDER + "input/ck";
-	std::string options = "";
+	std::string options = "-X 10";
 
 	//-b -g -w
 	//-b -p
