@@ -1,23 +1,22 @@
 
-C5.0 [Release 2.07 GPL Edition]  	Sat May 21 16:42:15 2016
+C5.0 [Release 2.07 GPL Edition]  	Mon May 23 19:24:20 2016
 -------------------------------
 
     Options:
-	Application `../ck-data/input/ck'
-	Probability thresholds
+	Application `../ck-data/input/ck2'
 
 Class specified by attribute `class'
 
-Read 300 cases (25 attributes) from ../ck-data/input/ck.data
+Read 300 cases (25 attributes) from ../ck-data/input/ck2.data
 
 Decision tree:
 
-sc >= 1.4 (1.25): ckd (159.9/1.6)
-sc <= 1.2 (1.25):
+sc > 1.2: ckd (159.9/1.6)
+sc <= 1.2:
 :...dm = yes: ckd (15.4)
     dm = no:
-    :...hemo <= 12.7 (12.85): ckd (15.8/0.3)
-        hemo >= 13 (12.85):
+    :...hemo <= 12.7: ckd (15.8/0.3)
+        hemo > 12.7:
         :...pe = yes: ckd (4.4)
             pe = no:
             :...sg = 1.005: notckd (0)
@@ -43,25 +42,10 @@ Evaluation on training data (300 cases):
 	Attribute usage:
 
 	     96%  sc
-	     51%  dm
+	     49%  dm
 	     39%  hemo
 	     38%  pe
 	     36%  sg
-
-
-Evaluation on test data (100 cases):
-
-	    Decision Tree   
-	  ----------------  
-	  Size      Errors  
-
-	     6    2( 2.0%)   <<
-
-
-	   (a)   (b)    <-classified as
-	  ----  ----
-	    50          (a): class ckd
-	     2    48    (b): class notckd
 
 
 Time: 0.0 secs

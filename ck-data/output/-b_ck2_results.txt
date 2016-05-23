@@ -1,14 +1,14 @@
 
-C5.0 [Release 2.07 GPL Edition]  	Sat May 21 16:41:04 2016
+C5.0 [Release 2.07 GPL Edition]  	Mon May 23 19:24:22 2016
 -------------------------------
 
     Options:
-	Application `../ck-data/input/ck'
+	Application `../ck-data/input/ck2'
 	Boosted classifiers
 
 Class specified by attribute `class'
 
-Read 300 cases (25 attributes) from ../ck-data/input/ck.data
+Read 300 cases (25 attributes) from ../ck-data/input/ck2.data
 
 -----  Trial 0:  -----
 
@@ -112,25 +112,6 @@ boost	          0( 0.0%)   <<
 	     47%  htn
 	     43%  sg
 	     42%  pe
-
-
-Evaluation on test data (100 cases):
-
-Trial	    Decision Tree   
------	  ----------------  
-	  Size      Errors  
-
-   0	     6    2( 2.0%)
-   1	     6    5( 5.0%)
-   2	     8    0( 0.0%)
-   3	    11    2( 2.0%)
-boost	          0( 0.0%)   <<
-
-
-	   (a)   (b)    <-classified as
-	  ----  ----
-	    50          (a): class ckd
-	          50    (b): class notckd
 
 
 Time: 0.0 secs

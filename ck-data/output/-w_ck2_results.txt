@@ -1,0 +1,55 @@
+
+C5.0 [Release 2.07 GPL Edition]  	Mon May 23 19:24:23 2016
+-------------------------------
+
+    Options:
+	Application `../ck-data/input/ck2'
+	Winnow attributes
+
+Class specified by attribute `class'
+
+Read 300 cases (25 attributes) from ../ck-data/input/ck2.data
+
+19 attributes winnowed
+Estimated importance of remaining attributes:
+
+   2400%  sc
+    300%  sg
+    100%  pcv
+     <1%  dm
+     <1%  pe
+
+Decision tree:
+
+sc > 1.2: ckd (159.9/1.6)
+sc <= 1.2:
+:...sg in {1.005,1.010,1.015}: ckd (32.8/0.2)
+    sg = 1.025: notckd (52.7/0.4)
+    sg = 1.020:
+    :...pcv <= 39: ckd (4.7/0.1)
+        pcv > 39: notckd (50/4.2)
+
+
+Evaluation on training data (300 cases):
+
+	    Decision Tree   
+	  ----------------  
+	  Size      Errors  
+
+	     5    6( 2.0%)   <<
+
+
+	   (a)   (b)    <-classified as
+	  ----  ----
+	   197     3    (a): class ckd
+	     3    97    (b): class notckd
+
+
+	Attribute usage:
+
+	     96%  sc
+	     48%  sg
+	     18%  pcv
+
+
+Time: 0.0 secs

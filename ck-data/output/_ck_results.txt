@@ -1,10 +1,9 @@
 
-C5.0 [Release 2.07 GPL Edition]  	Sat May 21 16:43:52 2016
+C5.0 [Release 2.07 GPL Edition]  	Mon May 23 19:24:31 2016
 -------------------------------
 
     Options:
 	Application `../ck-data/input/ck'
-	Do not use global tree pruning
 
 Class specified by attribute `class'
 

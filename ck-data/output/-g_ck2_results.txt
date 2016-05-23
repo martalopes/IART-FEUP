@@ -1,13 +1,14 @@
 
-C5.0 [Release 2.07 GPL Edition]  	Sat May 21 16:41:11 2016
+C5.0 [Release 2.07 GPL Edition]  	Mon May 23 19:24:25 2016
 -------------------------------
 
     Options:
-	Application `../ck-data/input/ck'
+	Application `../ck-data/input/ck2'
+	Do not use global tree pruning
 
 Class specified by attribute `class'
 
-Read 300 cases (25 attributes) from ../ck-data/input/ck.data
+Read 300 cases (25 attributes) from ../ck-data/input/ck2.data
 
 Decision tree:
 
@@ -46,21 +47,6 @@ Evaluation on training data (300 cases):
 	     39%  hemo
 	     38%  pe
 	     36%  sg
-
-
-Evaluation on test data (100 cases):
-
-	    Decision Tree   
-	  ----------------  
-	  Size      Errors  
-
-	     6    2( 2.0%)   <<
-
-
-	   (a)   (b)    <-classified as
-	  ----  ----
-	    50          (a): class ckd
-	     2    48    (b): class notckd
 
 
 Time: 0.0 secs
